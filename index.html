@@ -246,6 +246,28 @@ simbolo relacionado a Patitos Pawa.
             document.getElementById("js1").style.fontSize = "150%";
             document.getElementById("js1").style.backgroundColor = "darkgreen";
         </script>
+        <br>
+        <script>
+        function bombilla(foco)
+        {
+            var img;
+            if(foco==0)
+            {
+                img = "focos/focoApagado.jpg"
+            }
+            else
+            {
+                img = "focos/focoEncendido.jpg"
+            }
+            document.getElementById("foquito").src = img;
+        }
+        </script>
+        <img id="foquito" src="focos/focoApagado.jpg" width="100" height="180">
+        <p>
+            <button type="button" onclick="bombilla(1)">Encender</button>
+            <button type="button" onclick="bombilla(0)">Apagar</button>
+        </p>
+        <p style="color: wheat">Imagenes de prueba, solo era para probar el comando, despues buscare que hacer bien la animacion</p>
 
             <address style="color:cornsilk" id="autor">
             Comando que sirve para marcar datos del autor. <br>
