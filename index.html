@@ -53,6 +53,17 @@
         -webkit-text-stroke: 1px #520286
     }
 
+    #ora{
+        color:#0e2c05;
+        text-align: center;
+        padding: 2px;
+        border: 3px solid rgb(0, 0, 0);
+        background-color: #0e2c05;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+    }
+    #zero{
+        color: yellow;
+    }
     </style>
     <body style="background-image: url(http://ntc-entrerios.com.ar/wp-content/uploads/2017/07/camino-bosque.jpg)">
 
@@ -77,11 +88,12 @@
         <ul id=l01>
             <li id=l01><a href="#Continuar">Continuar</a></li>
             <li id=l01><a href="#Finalizar">Finalizar</a></li>
+            <li id=l01><a href="#autor">Tp</a></li>
         </ul>
         <!--Parrafo y enlace con color-->
             <p title="Sitio de prueba" style="color:antiquewhite; border: 2px solid blue">
                 Este es un sitio de prueba llamado
-                    <a href="https://www.youtube.com" style="color:gold"> Pato</a>
+                    <a href="https://www.youtube.com" style="color:gold" target="_blank"> Pato</a>
                 <br> <!--sirve para hacer salto de linea-->
                 La palabra te lleva a youtube, red por la cual conoci a alguien muy importante para mi hasta la fecha.
             </p>
@@ -193,10 +205,49 @@ simbolo relacionado a Patitos Pawa.
         </map>
             <!--https://previews.123rf.com/images/joeydanuphol/joeydanuphol1509/joeydanuphol150900002/45063210-ping%C3%BCino-emperador.jpg-->
         <p style="color: white">
-            La imagen funciona <span class="algo"><b>SOLO</b></span> si la ventana posee las dimensiones adecuadas. CABALLO
+            La imagen funciona <span class="algo"><b>SOLO</b></span> si la ventana posee las dimensiones adecuadas.
         </p>
 
-            <address style="color:cornsilk">
+        <h1 id="ora">Aun no?</h1>
+
+        <a href="#hip" id="zero">Saltar hacia la hipotesis</a>
+        <br>
+        <a href="#fn" id="zero">Saltar todo y ir al ultimo paso</a>
+        <div style="color:white"> 
+        <h2>Problema</h2>
+        <p>Comienza el bucle</p>
+
+        <h2>Analisis</h2>
+        <p>Paso principal</p>
+
+        <h2 id="hip">Hipotesis</h2>
+        <p>Luego del analisis se plantea una hipotesis(aun no se debe dejar de analisar)</p>
+
+        <h2>Conclucion</h2>
+        <p>Se crea en base a lo descubierto en la hipotesis</p>
+
+        <h2 id="fn">Establecimiento de ley</h2>
+        <p>Una vez que todo queda claro, se establece que asi son las cosas</p>
+        </div>
+
+        <iframe src="https://www.youtube.com" width="300px" height="300px" style="border:none" name="ventana"></iframe>
+        <p><a href="https://www.google.com" target="ventana">Google</a></p>
+        <p>El comando no funciona por temas de seguridad en los navegadores...</p>
+        <ul style="list-style-type:square">
+            <li>Caballo</li>
+            <li>Delfin</li>
+            <li>Conejo</li>
+        </ul>
+        <span id="js1"></span>
+
+        <script>
+            document.getElementById("js1").innerHTML = "Probando comandos JS";
+            document.getElementById("js1").style.color = "white";
+            document.getElementById("js1").style.fontSize = "150%";
+            document.getElementById("js1").style.backgroundColor = "darkgreen";
+        </script>
+
+            <address style="color:cornsilk" id="autor">
             Comando que sirve para marcar datos del autor. <br>
             En este caso yo mero :v <br>
             <ins>Informacion</ins> <br>
