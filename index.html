@@ -3,6 +3,8 @@
 <!--<html lang="es-US"> para declarar idioma-->
     <head>
         <title>Pato</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <style>
     table, th, td {
@@ -269,6 +271,12 @@ simbolo relacionado a Patitos Pawa.
             <button type="button" onclick="bombilla(0)">Apagar</button>
         </p>
         <p style="color: wheat">Imagenes de prueba, solo era para probar el comando, despues buscare que hacer bien la animacion</p>
+        <button type="button" onclick="document.getElementById('fecha').innerHTML= Date()">
+            Ver fecha
+        </button>
+            <!-- <link rel="stylesheet" href="mystyle.css"> 
+            Es un estilo personalizado ya creado en un archivo css-->
+        <p id="fecha" style="color:whitesmoke"></p>
 
             <address style="color:cornsilk" id="autor">
             Comando que sirve para marcar datos del autor. <br>
