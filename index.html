@@ -5,6 +5,20 @@
         <title>Pato</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+        function tPrompt(){
+            var valor = prompt("Ingrese un numero binario.");
+            if(valor == 0 || valor == 1){
+                alert("Correcto " + valor + " es binario.");
+                //document.getElementById("pPrompt").innerHTML = "Correcto " + valor + " es binario.";
+            }
+            else
+            {
+                alert("Que bruto pongale 0");
+                //document.getElementById("pPrompt").innerHTML = "Que bruto pongale 0";
+            }
+        }
+        </script>
     </head>
     <style>
     table, th, td {
@@ -118,7 +132,11 @@ simbolo relacionado a Patitos Pawa.
         <!-- <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> -->
         <p style="font-size: 150%; color:#ff7400"> <cite>Patitos Pawa!</cite></p>
         <p style="color:aliceblue">Se desconoce aun la fecha en que surgio <abbr title="Patitos Pawa">PP</abbr> ,tampoco se conoce los integrantes oficiales actuales</p>  
-        <button>Funcionara al final</button>
+        <button type="button">Funcionara al final</button>
+        <br>
+        <a href="lay.html" target="_blank"><button type="button">Lay</button></a>
+        <br>
+        <button onclick="tPrompt()">Abrir prompt</button>
         <!--2 tipos de listas con color
         El FONT afecta a todos los elementos dentro de el-->
         <font color="WHITE">
