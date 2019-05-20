@@ -4,16 +4,23 @@
     <head>
         <title>Pato</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script>
+        var se = 1;
         function tPrompt(){
             var valor = prompt("Ingrese un numero binario.");
-            if(valor == 0 || valor == 1){
+            if(se == 0 && valor == 0){
+                se = 1;
+                alert("No me referia a eso, pero esta bien, 0 es binario");
+            }
+            else if(valor == 0 || valor == 1){
                 alert("Correcto " + valor + " es binario.");
+                se = 1;
                 //document.getElementById("pPrompt").innerHTML = "Correcto " + valor + " es binario.";
             }
             else
             {
+                se = 0;
                 alert("Que bruto pongale 0");
                 //document.getElementById("pPrompt").innerHTML = "Que bruto pongale 0";
             }
@@ -111,7 +118,7 @@
                 Este es un sitio de prueba llamado
                     <a href="https://www.youtube.com" style="color:gold" target="_blank"> Pato</a>
                 <br> <!--sirve para hacer salto de linea-->
-                La palabra te lleva a youtube, red por la cual conoci a alguien muy importante para mi hasta la fecha.
+                La palabra te lleva a youtube, red por la cual conoci a alguien que fue muy importante para mi los ultimos 6 años, pero todo empezo a acabar a inicios de 2019.
             </p>
             <!--<pre> Imprime el texto tal cual lo he escrito,
                 incluyendo sangria, generalmente se lanza en 
@@ -209,6 +216,12 @@ simbolo relacionado a Patitos Pawa.
             <dd>El inicio se convierte en primer problema</dd>
             <dt>Mayo</dt>
             <dd>Acabar o no acabar con el primer problema, esa es la cuestion</dd>
+            <dt>Fines de Mayo</dt>
+            <dd>Decisiones tomadas</dd>
+            <dd>1er Problema Acabado</dd>
+            <dd>2do Problema Acabado</dd>
+            <dd>3er Problema Acabado</dd>
+            <dd>No podia seguir asi, mejor terminar con todo y pensar en mi vida</dd>
 
         </dl>
         </div>
@@ -252,7 +265,7 @@ simbolo relacionado a Patitos Pawa.
 
         <iframe src="https://www.youtube.com" width="300px" height="300px" style="border:none" name="ventana"></iframe>
         <p><a href="https://www.google.com" target="ventana">Google</a></p>
-        <p>El comando no funciona por temas de seguridad en los navegadores...</p>
+        <p>La conexion es rechazada por temas de seguridad, el comando ya no es de utilidad</p>
         <ul style="list-style-type:square">
             <li>Caballo</li>
             <li>Delfin</li>
